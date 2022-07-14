@@ -9,7 +9,7 @@ Different modules are created as follows:
 
 2. sigmoid(z) - The sigmoid activation function. a = 1/(1+exp(-z))
 
-3. relu(z) - The REctifies Linear Unit activation funciton. a = maximum(0,z)
+3. relu(z) - The REctified Linear Unit activation funciton. a = maximum(0,z)
 
 4. 3 modules for forward propagation {forward(a, W, b); forward_prop_activation(a_prev, W, b, act_fn); forward_prop(X, params)} - forward_prop starts the feed forward mechanism. It calls the forward_prop_activation module for the 1st layer to the 2nd last layer with relu activation function and for the last layer with sigmoid activation function. forward_prop_activation first calls the forward module which calculates the dot product as z = W.dot(a) + b and then the activation is applied to z.
 
